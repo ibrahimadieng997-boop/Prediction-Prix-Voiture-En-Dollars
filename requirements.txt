@@ -1,0 +1,22 @@
+# ------------------------------------------------------------------
+# Prédiction du prix de vente d'une voiture — dépendances
+# Cible : Streamlit Community Cloud, Python 3.12 (valeur par défaut)
+#
+# ATTENTION — versions stables d'août 2026. Elles ne conviennent que
+# si le pipeline a été entraîné avec ces mêmes versions. Sinon,
+# relevez les vôtres avec generer_requirements.py.
+#
+# Si pipe_from_grid contient un estimateur externe (XGBoost, LightGBM,
+# CatBoost), ajoutez la ligne correspondante.
+# ------------------------------------------------------------------
+
+# --- Application ---
+streamlit>=1.57,<2.0
+
+# --- Stack ML (doit correspondre à l'environnement d'entraînement) ---
+scikit-learn==1.9.0
+numpy==2.4.4
+joblib==1.5.3
+
+# --- Manipulation de données ---
+pandas>=2.2,<3.1
